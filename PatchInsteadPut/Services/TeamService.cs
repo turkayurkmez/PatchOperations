@@ -12,5 +12,17 @@ namespace PatchInsteadPut.Services
         {
             return InMemoryTeamsAndPlayers.GetTeamsInMemory();
         }
+
+        public Team GetTeam(int id)
+        {
+            return InMemoryTeamsAndPlayers.GetTeamsInMemory().FirstOrDefault(x => x.Id == id);
+        }
+
+        public Team Edit(Team team)
+        {
+            var existingTeam = InMemoryTeamsAndPlayers.GetTeamsInMemory().FirstOrDefault(x => x.Id == team.Id);
+            existingTeam = team;
+            return team;
+        }
     }
 }

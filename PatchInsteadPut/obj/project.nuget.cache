@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "9ZpIHjDkTjLFl984s9LrL+WXISUbyMpyrx3ovqjFYwlFnAZX0QPph9dJN/0+1EmNXxgcy+R7o2J/m8FjlWbD6w==",
+  "dgSpecHash": "AxH+aNVAiHomMHHy3+eIUM0VVurQUekqX08+rmsiRbgMbcAcSTEyklqi6OoOivW8bi4lmJhrmUjlwOaERPvqjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\turka\\source\\repos\\kişisel\\Makale\\RESTApi\\PatchInsteadPut\\PatchInsteadPut\\PatchInsteadPut.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.6\\microsoft.aspnetcore.jsonpatch.3.1.6.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.6\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.6.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

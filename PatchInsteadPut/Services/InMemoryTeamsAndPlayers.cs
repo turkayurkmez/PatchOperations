@@ -14,6 +14,7 @@ namespace PatchInsteadPut.Services
             {
                  new Team
                  {
+                      Id =1,
                       Name = "Beşiktaş JK",
                       Players = new List<Player>
                       {
@@ -23,12 +24,14 @@ namespace PatchInsteadPut.Services
                                      Nationality="Türkiye",
                                      Position ="Kaleci"
                                     },
-                          new Player { Name="Ersin Destanoğlu",
+                          new Player { 
+                                       Name="Ersin Destanoğlu",
                                        BirthDate = new DateTime(2001,1,1),
                                        Nationality ="Türkiye",
                                        Position = "Kaleci"
                                      },
-                           new Player { Name="Domagoj Vida",
+                           new Player { 
+                                       Name="Domagoj Vida",
                                        BirthDate = new DateTime(1989,4,29),
                                        Nationality ="Türkiye",
                                        Position = "Stoper"
@@ -38,6 +41,7 @@ namespace PatchInsteadPut.Services
                  },
                      new Team
                  {
+                      Id=2,
                       Name = "Galatasaray SK",
                       Players = new List<Player>
                       {
@@ -47,12 +51,14 @@ namespace PatchInsteadPut.Services
                                      Nationality="Türkiye",
                                      Position ="Kaleci"
                                     },
-                          new Player { Name="Okan Kocuk",
+                          new Player { 
+                                       Name="Okan Kocuk",
                                        BirthDate = new DateTime(1995,7,27),
                                        Nationality ="Türkiye",
                                        Position = "Stoper"
                                      },
-                           new Player { Name="Christian Luyindama",
+                           new Player { 
+                                       Name="Christian Luyindama",
                                        BirthDate = new DateTime(1994,1,8),
                                        Nationality ="Kongo",
                                        Position = "Kaleci"
