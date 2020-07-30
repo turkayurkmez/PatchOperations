@@ -20,6 +20,19 @@ namespace PatchInsteadPut.Controllers
             return Ok(teams);
         }
 
+        [HttpPut("{id}")]
+        public IActionResult Edit(int id, Team team)
+        {
+            TeamService teamService = new TeamService();
+            if (teamService.GetTeam(id) == null)
+            {
+                return BadRequest();
+            }
+            Team updatedTeam = teamService.Edit(team);
+            return Ok(updatedTeam);
+        }
+    
+
         [HttpPatch("{id}")]
         public IActionResult Patch(int id,JsonPatchDocument<Team> patchDocument)
         {
@@ -43,12 +56,6 @@ namespace PatchInsteadPut.Controllers
             return BadRequest(ModelState);
         }
 
-        [HttpPut]
-        public IActionResult Edit(Team team)
-        {
-            TeamService teamService = new TeamService();
-            Team updatedTeam = teamService.Edit(team);
-            return Ok(updatedTeam);
-        }
+       
     }
 }

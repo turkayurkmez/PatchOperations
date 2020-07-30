@@ -20,9 +20,17 @@ namespace PatchInsteadPut.Services
 
         public Team Edit(Team team)
         {
-            var existingTeam = InMemoryTeamsAndPlayers.GetTeamsInMemory().FirstOrDefault(x => x.Id == team.Id);
-            existingTeam = team;
-            return team;
+            var existingTeam = GetTeam(team.Id);
+            if (existingTeam != null)
+            {
+                existingTeam.LogoUrl = team.LogoUrl;
+                existingTeam.Name = team.Name;
+                existingTeam.Players = team.Players;
+                
+            }
+
+            return existingTeam;
+
         }
     }
 }

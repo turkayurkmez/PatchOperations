@@ -30,7 +30,7 @@ namespace PatchInsteadPut.Services
                                        Nationality ="Türkiye",
                                        Position = "Kaleci"
                                      },
-                           new Player { 
+                          new Player { 
                                        Name="Domagoj Vida",
                                        BirthDate = new DateTime(1989,4,29),
                                        Nationality ="Türkiye",
